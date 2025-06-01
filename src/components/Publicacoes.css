@@ -1,0 +1,174 @@
+
+.publicacoes {
+  padding: 20px 0;
+}
+
+.publicacoes-header {
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1e40af;
+}
+
+.publicacoes-filters {
+  margin-bottom: 24px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.search-box {
+  flex: 1;
+}
+
+.search-input {
+  margin-bottom: 0;
+}
+
+.filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+}
+
+.view-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.view-button {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.view-button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.view-button:hover:not(.active) {
+  background: #f3f4f6;
+}
+
+.publicacoes-content.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.publicacoes-content.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.publication-card {
+  display: flex;
+  gap: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.publication-card:hover {
+  border-color: #3b82f6;
+}
+
+.publication-icon {
+  font-size: 24px;
+  color: #2563eb;
+  min-width: 40px;
+}
+
+.publication-content {
+  flex: 1;
+}
+
+.publication-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 8px;
+}
+
+.publication-authors {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.publication-meta {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.publication-source {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.publication-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.publicacoes-content.list .publication-card {
+  padding: 16px;
+}
+
+.publicacoes-content.list .publication-actions {
+  justify-content: flex-end;
+}
+
+.empty-state {
+  padding: 60px 20px;
+}
+
+.empty-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.empty-state h3 {
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .filter-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .publicacoes-content.grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .publication-actions {
+    flex-direction: column;
+  }
+}

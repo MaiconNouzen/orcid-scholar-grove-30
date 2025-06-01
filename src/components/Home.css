@@ -1,0 +1,146 @@
+
+.home {
+  padding: 20px 0;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #bfdbfe;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #eff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 16px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 12px;
+}
+
+.feature-description {
+  color: #6b7280;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.feature-link {
+  background: transparent;
+  color: #2563eb;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.feature-link:hover {
+  color: #1d4ed8;
+}
+
+.benefits-section {
+  background: #eff6ff;
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid #bfdbfe;
+}
+
+.benefits-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1e40af;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.benefit-column {
+  padding: 16px;
+}
+
+.benefit-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d4ed8;
+  margin-bottom: 16px;
+}
+
+.benefit-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #374151;
+}
+
+.benefit-list li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .benefits-section {
+    padding: 24px;
+  }
+}
